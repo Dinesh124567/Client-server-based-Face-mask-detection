@@ -28,16 +28,19 @@ This project consists of two things,
 
 ### Procedure for execution
 
-* -> first select a host machine by considering good specifications since the deep learning pretrained models are going to load and execute on this machine. now install all the required packages in system using command
+*  first select a host machine by considering good specifications since the deep learning pretrained models are going to load and execute on this machine. now install all the required packages in system using command
+    
     ` pip install -r requirements.txt `
 
-* -> make sure the host machine is connected to LAN network where all the client systems are also connected to the same network
+*  make sure the host machine is connected to LAN network where all the client systems are also connected to the same network
    
-* -> now run the host main script which initiates REST api host
-        ` python fastApi.py `
+*  now run the host main script which initiates REST api host
+       
+       ` python fastApi.py `
 
-* -> copy the local ip address of the host machine - (example 192.168.1.40), this ip address with port number combined is used to access the project [SWAGGER UI](https://swagger.io/tools/swagger-ui/) where you can see one method, you can upload the image / video footage as request to api and the host machine recieves request and processes for face-mask detection, sends back the output.
+*  copy the local ip address of the host machine - (example 192.168.1.40), this ip address with port number combined is used to access the project [SWAGGER UI](https://swagger.io/tools/swagger-ui/) where you can see one method, you can upload the image / video footage as request to api and the host machine recieves request and processes for face-mask detection, sends back the output.
 
-* -> to run live facemask detection, copy the client script to any of the client machine and execute the client side script with following command
+*  to run live facemask detection, copy the client script to any of the client machine and execute the client side script with following command
+   
    ` python client.py http://{host local ip address}:8000/facemask_detect `
 
