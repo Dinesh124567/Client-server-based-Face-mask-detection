@@ -33,7 +33,7 @@ This project consists of two things,
     
 *  make sure the host machine is connected to LAN network where all the client systems are also connected to the same network
    
-*  now run the host main script which initiates REST api host
+*  now run the host main script which initiates [REST API](https://en.wikipedia.org/wiki/Representational_state_transfer) host
        
       ` python fastApi.py `
 
